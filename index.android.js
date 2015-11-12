@@ -4,6 +4,8 @@
  */
 'use strict';
 
+var AudioPlayer = require('react-native-audioplayer');
+
 var React = require('react-native');
 var {
   AppRegistry,
@@ -83,12 +85,12 @@ var MusicPlayer = React.createClass({
           <Text style={styles.title}>{movie.title}</Text>
           <TouchableWithoutFeedback
             onPress={() =>
-              ToastAndroid.show('PLAY THE MUSIC', ToastAndroid.SHORT)}>
+              AudioPlayer.play('yellow')}>
             <Text style={styles.text}>PLAY</Text>
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback
             onPress={() =>
-              ToastAndroid.show('STOP THE MUSIC', ToastAndroid.SHORT)}>
+              AudioPlayer=require('react-native-audioplayer')}>
             <Text style={styles.text}>STOP</Text>
           </TouchableWithoutFeedback>
         </View>
