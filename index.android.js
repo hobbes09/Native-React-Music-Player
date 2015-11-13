@@ -90,7 +90,7 @@ var MusicPlayer = React.createClass({
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback
             onPress={() =>
-              AudioPlayer.stop('yellow')}>
+              ToastAndroid.show('STOP MUSIC', ToastAndroid.SHORT)}>
             <Text style={styles.text}>STOP</Text>
           </TouchableWithoutFeedback>
         </View>
